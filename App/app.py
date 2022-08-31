@@ -42,7 +42,7 @@ try:
     authenticate = tweepy.OAuthHandler(consumer_key=consumerKey, consumer_secret=consumerSecret)
 
     # Set the access token and access token secret
-    authenticate.set_access_token(access_token=accessToken, access_token_secret=accessTokenSecret)
+    authenticate.set_access_token(accessToken, accessTokenSecret)
     print(authenticate)
     # Creating the API object while passing in auth information
     api = tweepy.API(authenticate, wait_on_rate_limit=True)
