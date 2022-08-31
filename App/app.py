@@ -20,10 +20,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # Twitter Api creation
-consumerKey = os.environ.get('CONSUMERKEY')
-consumerSecret=os.environ.get('CONSUMERSECRET')
-accessToken=os.environ.get('ACCESSTOKEN')
-accessTokenSecret=os.environ.get('ACCESSTOKENSECRET')
+# consumerKey = os.environ.get('CONSUMERKEY')
+# consumerSecret=os.environ.get('CONSUMERSECRET')
+# accessToken=os.environ.get('ACCESSTOKEN')
+# accessTokenSecret=os.environ.get('ACCESSTOKENSECRET')
+consumerKey = os.getenv('CONSUMERKEY')
+consumerSecret=os.getenv('CONSUMERSECRET')
+accessToken=os.getenv('ACCESSTOKEN')
+accessTokenSecret=os.getenv('ACCESSTOKENSECRET')
 
 try:
     # Create the authentication object
