@@ -8,7 +8,7 @@ steps:
        ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
        CONSUMERKEY: ${{secrets.CONSUMERKEY}}
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
-        run: |
-          exho "ran"
+      run: |
+          echo "ran"
 
       
