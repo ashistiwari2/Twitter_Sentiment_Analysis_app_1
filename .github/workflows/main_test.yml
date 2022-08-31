@@ -5,12 +5,14 @@ on:
 jobs:
  secrets-in-github-actions:
   runs-on: windows-latest
+  
+  steps:
 
-env:
+      env:
        ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
        ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
        CONSUMERKEY: ${{secrets.CONSUMERKEY}}
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
 
-run: |
-    echo "ran success"
+    run: |
+       echo "ran success"
