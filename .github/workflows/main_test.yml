@@ -1,15 +1,11 @@
 name: Run secret key
-on:
-  push:
-     branches: [ main ]
 
-  steps:
 
-      env:
+
+env:
        ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
        ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
        CONSUMERKEY: ${{secrets.CONSUMERKEY}}
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
-
-    run: |
+run: |
        echo "ran success"
