@@ -23,10 +23,10 @@ load_dotenv()
 
 try:
     # Create the authentication object
-    authenticate = tweepy.OAuthHandler(os.environ.get('consumerKey'), os.environ.get('consumerSecret'))
+    authenticate = tweepy.OAuthHandler(os.getenv('consumerKey'), os.getenv('consumerSecret'))
 
     # Set the access token and access token secret
-    authenticate.set_access_token(os.environ.get('accessToken'), os.environ.get('accessTokenSecret'))
+    authenticate.set_access_token(os.getenv('accessToken'), os.getenv('accessTokenSecret'))
     print(authenticate)
     # Creating the API object while passing in auth information
     api = tweepy.API(authenticate, wait_on_rate_limit=True)
