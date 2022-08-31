@@ -1,9 +1,9 @@
 
-consumerKey ='yfYciQIR91EkR3eJ0ayLueNWQ'
-consumerKey ='yfYciQIR91EkR3eJ0ayLueNWQ'
-consumerSecret ='EhfHEq0TEjG6sGvqhCHybVUIaxe5hQt8rv8BYst30aiKtrSQek'
-accessToken ='1262567298931589120-KHsGvGNOQQ2fWTnnSzM9kJZgJHKQ3D'
-accessTokenSecret ='VrOycaetl1xmZw8CxRYvGlN9Ohxd1PdhMUfLkT6W38fzw'
+consumerKey ='yfYciQIR91EkR3eJ0ayLueNWQf'
+consumerKey ='yfYciQIR91EkR3eJ0ayLueNWQf'
+consumerSecret ='EhfHEq0TEjG6sGvqhCHybVUIaxe5hQt8rv8BYst30aiKtfrSQek'
+accessToken ='1262567298931589120-KHsGvGNOfQQ2fWTnnSzM9kJZgJHKQ3D'
+accessTokenSecret ='VrOycaetl1xmZw8CxRYvGlNf9Ohxd1PdhMUfLkT6W38fzw'
 elif choice == "Monitor":
 add_page_visited_details("Monitor", datetime.now())
 st.subheader("Monitor App")
