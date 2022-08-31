@@ -20,13 +20,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # Twitter Api creation
+consumerKey = os.environ.get('consumerKey')
+consumerSecret=os.environ.get('consumerSecret')
+accessToken=os.environ.get('accessToken')
+accessTokenSecret=os.environ.get('accessTokenSecret')
 
 try:
     # Create the authentication object
-    authenticate = tweepy.OAuthHandler(os.getenv('consumerKey'), os.getenv('consumerSecret'))
+    authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret))
 
     # Set the access token and access token secret
-    authenticate.set_access_token(os.getenv('accessToken'), os.getenv('accessTokenSecret'))
+    authenticate.set_access_token(accessToken, accessTokenSecret))
     print(authenticate)
     # Creating the API object while passing in auth information
     api = tweepy.API(authenticate, wait_on_rate_limit=True)
