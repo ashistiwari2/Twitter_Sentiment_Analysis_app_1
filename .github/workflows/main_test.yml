@@ -1,4 +1,11 @@
-name: Run tests
+name: Run secret key
+on:
+  push:
+     branches: [ main ]
+jobs:
+ secrets-in-github-actions:
+  runs-on: windows-latest
+
 env:
        ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
        ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
@@ -6,4 +13,4 @@ env:
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
 
 run: |
-    main_test
+    echo "ran success"
