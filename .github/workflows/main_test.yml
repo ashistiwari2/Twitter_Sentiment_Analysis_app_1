@@ -3,6 +3,11 @@ on:
   push:
      branches: [ main ]
 jobs:
+example_matrix:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        version: [10, 12, 14]
 
 steps:
       env:
