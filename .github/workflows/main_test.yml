@@ -5,5 +5,5 @@ env:
        CONSUMERKEY: ${{secrets.CONSUMERKEY}}
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
 
-run:
+run: |
     main_test
