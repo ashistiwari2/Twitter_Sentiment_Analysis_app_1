@@ -30,7 +30,7 @@ load_dotenv()
 # accessTokenSecret=os.environ['ACCESSTOKENSECRET']
 consumerKey = st.secrets['CONSUMERKEY']
 consumerSecret=st.secrets['CONSUMERSECRET']
-accessToken='1262567298931589120-NaM1rr7rj7jWtGxJGICPqe9rwmnSw1'
+accessToken=st.secrets['ACCESSTOKEN']
 accessTokenSecret=st.secrets['ACCESSTOKENSECRET']
 # consumerKey = os.getenv('CONSUMERKEY')
 # consumerSecret=os.getenv('CONSUMERSECRET')
