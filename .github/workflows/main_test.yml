@@ -1,13 +1,9 @@
-name: Run secret key
-on:
-  push:
-     branches: [ main ]
+    
 steps:
-      env:
-       ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
-       ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
-       CONSUMERKEY: ${{secrets.CONSUMERKEY}}
-       CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
-      
-
+  - name: secret key
+    env:
+      ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
+      ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
+      CONSUMERKEY: ${{secrets.CONSUMERKEY}}
+      CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
       
