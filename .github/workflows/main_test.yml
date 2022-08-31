@@ -1,4 +1,4 @@
-~name: Run secret key
+name: Run secret key
 on:
   push:
      branches: [ main ]
@@ -8,6 +8,5 @@ env:
    ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
    CONSUMERKEY: ${{secrets.CONSUMERKEY}}
    CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
-run: |
- nbdev_test_nbs
+run: python App/app.py
       
