@@ -1,5 +1,7 @@
 ~name: Run secret key
-
+on:
+  push:
+     branches: [ main ]
 
 env:
    ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
