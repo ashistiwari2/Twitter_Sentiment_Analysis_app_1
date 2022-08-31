@@ -24,10 +24,14 @@ load_dotenv()
 # consumerSecret=os.environ.get('CONSUMERSECRET')
 # accessToken=os.environ.get('ACCESSTOKEN')
 # accessTokenSecret=os.environ.get('ACCESSTOKENSECRET')
-consumerKey = os.getenv('CONSUMERKEY')
-consumerSecret=os.getenv('CONSUMERSECRET')
-accessToken=os.getenv('ACCESSTOKEN')
-accessTokenSecret=os.getenv('ACCESSTOKENSECRET')
+consumerKey = os.environ['CONSUMERKEY']
+consumerSecret=os.environ['CONSUMERSECRET']
+accessToken=os.environ['ACCESSTOKEN']
+accessTokenSecret=os.environ['ACCESSTOKENSECRET']
+# consumerKey = os.getenv('CONSUMERKEY')
+# consumerSecret=os.getenv('CONSUMERSECRET')
+# accessToken=os.getenv('ACCESSTOKEN')
+# accessTokenSecret=os.getenv('ACCESSTOKENSECRET')
 
 try:
     # Create the authentication object
