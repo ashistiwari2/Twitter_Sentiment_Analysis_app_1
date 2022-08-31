@@ -9,6 +9,6 @@ steps:
        CONSUMERKEY: ${{secrets.CONSUMERKEY}}
        CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
       run: |
-          echo "ran"
+          echo "ran succ"
 
       
