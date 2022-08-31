@@ -1,0 +1,9 @@
+name: Run tests
+env:
+       ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
+       ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
+       CONSUMERKEY: ${{secrets.CONSUMERKEY}}
+       CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
+
+run:
+    main_test
