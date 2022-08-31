@@ -1,19 +1,11 @@
-name: Run secret key
-on:
-  push:
-     branches: [ main ]
-jobs:
-example_matrix:
-    strategy:
-      matrix:
-        os: [ubuntu-22.04, ubuntu-20.04]
-        version: [10, 12, 14]
+~name: Run secret key
 
-steps:
-      env:
-       ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
-       ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
-       CONSUMERKEY: ${{secrets.CONSUMERKEY}}
-       CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
-  
+
+env:
+   ACCESSTOKEN: ${{secrets.ACCESSTOKEN}}
+   ACCESSTOKENSECRET: ${{secrets.ACCESSTOKENSECRET}}
+   CONSUMERKEY: ${{secrets.CONSUMERKEY}}
+   CONSUMERSECRET: ${{secrets.CONSUMERSECRET}}
+run: |
+ nbdev_test_nbs
       
