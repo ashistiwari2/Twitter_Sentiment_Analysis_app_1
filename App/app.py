@@ -19,7 +19,7 @@ from about import *
 from dotenv import load_dotenv
 
 load_dotenv()
-im = Image.open("Twitter_Sentiment_Analysis_app_1/App/favicon.ico")
+im = Image.open("App/favicon.ico")
 st.set_page_config(
         page_title="Twitter Sentiment Analysis App",
         page_icon=im
