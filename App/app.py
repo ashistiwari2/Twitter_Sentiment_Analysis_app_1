@@ -19,6 +19,11 @@ from about import *
 from dotenv import load_dotenv
 
 load_dotenv()
+im = Image.open("favicon.ico")
+st.set_page_config(
+        page_title="Twitter Sentiment Analysis App",
+        page_icon=im
+    )
 # Twitter Api creation
 # consumerKey = os.environ.get('CONSUMERKEY')
 # consumerSecret=os.environ.get('CONSUMERSECRET')
