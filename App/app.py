@@ -15,7 +15,6 @@ import tweepy
 from PIL import Image
 from textblob import TextBlob
 import joblib
-from about import *
 im = Image.open("App/favicon.ico")
 st.set_page_config(
         page_title="Twitter Sentiment Analysis App",
