@@ -15,10 +15,10 @@ import tweepy
 from PIL import Image
 from textblob import TextBlob
 import joblib
-im = Image.open("favicon.ico")
+#im = Image.open("favicon.ico")
 st.set_page_config(
         page_title="Twitter Sentiment Analysis App",
-        page_icon=im
+        page_icon='🦈'
     )
 # Twitter Api creation
 # consumerKey = os.environ.get('CONSUMERKEY')
