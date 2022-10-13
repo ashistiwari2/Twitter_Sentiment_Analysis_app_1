@@ -16,9 +16,6 @@ from PIL import Image
 from textblob import TextBlob
 import joblib
 from about import *
-from dotenv import load_dotenv
-
-load_dotenv()
 im = Image.open("App/favicon.ico")
 st.set_page_config(
         page_title="Twitter Sentiment Analysis App",
@@ -33,10 +30,11 @@ st.set_page_config(
 # consumerSecret=os.environ['CONSUMERSECRET']
 # accessToken=os.environ['ACCESSTOKEN']
 # accessTokenSecret=os.environ['ACCESSTOKENSECRET']
-consumerKey = st.secrets['CONSUMERKEY']
-consumerSecret=st.secrets['CONSUMERSECRET']
-accessToken=st.secrets['ACCESSTOKEN']
-accessTokenSecret=st.secrets['ACCESSTOKENSECRET']
+
+consumerKey = os.getenv("consumerKey")
+consumerSecret=os.getenv("consumerSecret")
+accessToken=os.getenv("accessToken")
+accessTokenSecret=os.getenv("accessTokenSecret")
 # consumerKey = os.getenv('CONSUMERKEY')
 # consumerSecret=os.getenv('CONSUMERSECRET')
 # accessToken=os.getenv('ACCESSTOKEN')
