@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 def about():
     st.subheader("About")
-    st.write("Created by Ashis and Akshat ")
+    st.write("Created by Ashis  ")
     image = Image.open(
         'App/Ashis_recent_passport_size_photo.jpeg')
     st.write('------------------------------------------------------------------------------------------')
@@ -13,12 +13,12 @@ def about():
         "Ashis Tiwari is thrilling student with adventuros nature. He is in final year of college and student of Sikkim"
         "  manipal institute of technology. He did his schooling from Pinegrove School,Dharampur ")
     st.write('------------------------------------------------------------------------------------------')
-    image1 = Image.open(
-        "App/WhatsApp Image 2022-04-02 at 1.21.13 PM.jpeg")
-    st.image(image1, caption="Akshat Kedia's image", width=200, channels="RGB", output_format="auto")
+#     image1 = Image.open(
+#         "App/WhatsApp Image 2022-04-02 at 1.21.13 PM.jpeg")
+#     st.image(image1, caption="Akshat Kedia's image", width=200, channels="RGB", output_format="auto")
 
-    st.write('------------------------------------------------------------------------------------------')
-    st.write("Akshat kedia is doing his btech from SMIT and in Final year")
+#     st.write('------------------------------------------------------------------------------------------')
+#     st.write("Akshat kedia is doing his btech from SMIT and in Final year")
     st.write('------------------------------------------------------------------------------------------')
     st.header("Our Guide")
     st.write('------------------------------------------------------------------------------------------')
