@@ -17,7 +17,7 @@ from textblob import TextBlob
 import joblib
 from about import *
 from dotenv import load_dotenv
-
+from io import BytesIO
 load_dotenv()
 im = Image.open("App/favicon.ico")
 st.set_page_config(
@@ -129,7 +129,22 @@ count2 = 0
 def main():
    # sentiment_dispaly("Twitter Sentiment Analysis App",500,500)
     url1 = "https://miro.medium.com/max/1400/1*FKQD-ZkhRbS3Q-MC6kybOg.png"
-    image1 = Image.open(requests.get(url1, stream=True).raw)
+    #import requests
+
+    #from PIL import Image
+
+    #from io import BytesIO
+
+    # Assuming you have the URL stored in the variable 'url1'
+
+    response = requests.get(url1, stream=True)
+
+    response.raise_for_status()  # Check for any errors during the request
+
+    # Open the image using PIL
+
+    image1 = Image.open(BytesIO(response.content))
+    #image1 = Image.open(requests.get(url1, stream=True).raw)
     st.image(image1, width=500, channels="RGB", output_format="auto")
     side_bg = 'App/depositphotos_3506443-stock-illustration-criticism-word-collage-on-black.jpg'
     sidebar_bg(side_bg)
