@@ -144,6 +144,7 @@ def main():
     # Open the image using PIL
 
     image1 = Image.open(BytesIO(response.content))
+    image1.close()
     #image1 = Image.open(requests.get(url1, stream=True).raw)
     st.image(image1, width=500, channels="RGB", output_format="auto")
     side_bg = 'App/depositphotos_3506443-stock-illustration-criticism-word-collage-on-black.jpg'
