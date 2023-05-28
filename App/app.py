@@ -210,11 +210,11 @@ def main():
                         st.experimental_rerun()
 
                     st.success("Profile Picture")
-                    url = 'https://unavatar.io/twitter/' + str(raw_text1)
+                    url = 'https://unavatar.io/twitter/'+str(raw_text1.lower())
                     print(user)
                     im = Image.open(requests.get(url, stream=True).raw)
                     st.image(im, caption=user.name, width=200, channels="RGB", output_format="auto")
-
+                    im.close()
                     st.write("{} id:{}".format(user.name, user.id))
                     st.write("{} Follower:{}".format(user.name, user.followers_count))
                     if len(user.description) > 0:
